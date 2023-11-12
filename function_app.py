@@ -308,11 +308,7 @@ def create_cert(req: func.HttpRequest) -> func.HttpResponse:
             principals=[principal],
             critical_options=[],
             extensions=[
-                "permit-X11-forwarding",
-                "permit-agent-forwarding",
-                "permit-port-forwarding",
-                "permit-pty",
-                "permit-user-rc"
+                "permit-pty"
             ]
         )
 
